@@ -1,14 +1,14 @@
 # Returns true if the input positive integer number forms a palindrome. Returns false otherwise.
 def is_palindrome(number)
+  return false if number == nil
   number = number.to_s
 
-  return false if number == nil
 
   i = 0
   j = number.length - 1
 
   while i < j
-    if number[i] == number [j]
+    if number[i] == number[j]
       i += 1
       j -= 1
     else
@@ -17,5 +17,4 @@ def is_palindrome(number)
   end
 
   return true
-
 end
